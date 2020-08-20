@@ -2,6 +2,7 @@
     "name": "accolon/view-components",
     "description": "View components in php",
     "require": {},
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Accolon\\ViewComponents\\": "src/"
