@@ -9,13 +9,11 @@ class Button extends Component
     public function render()
     {
         $text = $this->getProp('text');
-        $type = $this->getProp('type');
+        $props = $this->propsToString(['text']);
         return <<<TEMPLATE
-        <div>
-            <button type="$type">
-                $text
-            </button>
-        </div>
+        <button $props>
+            $text
+        </button>
         TEMPLATE;
     }
 }

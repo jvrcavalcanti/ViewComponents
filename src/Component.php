@@ -30,6 +30,21 @@ abstract class Component
         $this->props[$name] = $value;
     }
 
+    protected function propsToString(array $exceptions = [])
+    {
+        $result = "";
+
+        foreach ($this->props as $prop => $value) {
+            if (in_array($prop, $exceptions)) {
+                continue;
+            }
+            
+            $result .= " {$prop}='{$value}'";
+        }
+        
+        return $result;
+    }
+
     public function __toString()
     {
         return $this->render();

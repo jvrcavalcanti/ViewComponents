@@ -8,10 +8,9 @@ class Input extends Component
 {
     public function render()
     {
-        $name = $this->getProp('name');
-        $type = $this->getProp('type');
+        $props = $this->propsToString();
         return <<<TEMPLATE
-        <input name="$name" type="$type" />
+        <input $props />
         TEMPLATE;
     }
 }

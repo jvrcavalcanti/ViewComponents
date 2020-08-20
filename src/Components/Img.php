@@ -4,14 +4,13 @@ namespace Accolon\ViewComponents\Components;
 
 use Accolon\ViewComponents\Component;
 
-class Form extends Component
+class Img extends Component
 {
     public function render()
     {
+        $props = $this->propsToString();
         return <<<TEMPLATE
-        <form>
-            $this->children
-        </form>
+        <img $props />
         TEMPLATE;
     }
 }
