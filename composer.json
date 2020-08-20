@@ -1,0 +1,13 @@
+{
+    "name": "accolon/view-components",
+    "description": "View components in php",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Accolon\\ViewComponents\\": "src/"
+        },
+        "files": [
+            "./src/helpers.php"
+        ]
+    }
+}
